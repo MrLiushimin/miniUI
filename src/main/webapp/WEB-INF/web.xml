@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<!--请求地址http://localhost:8080/Employee?method=haha&...-->
+	<display-name>
+		miniUI_java
+	</display-name>
+	<servlet>
+		<servlet-name>Employee</servlet-name>
+		<servlet-class>com.liushimin.miniUI.servlet.EmployeeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Employee</servlet-name>
+		<url-pattern>/Employee</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Educational</servlet-name>
+		<servlet-class>com.liushimin.miniUI.servlet.EducationalServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Educational</servlet-name>
+		<url-pattern>/Educational</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>File</servlet-name>
+		<servlet-class>com.liushimin.miniUI.servlet.FileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>File</servlet-name>
+		<url-pattern>/File</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Position</servlet-name>
+		<servlet-class>com.liushimin.miniUI.servlet.PositionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Position</servlet-name>
+		<url-pattern>/Position</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Department</servlet-name>
+		<servlet-class>com.liushimin.miniUI.servlet.DepartmentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Department</servlet-name>
+		<url-pattern>/Department</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>FormService</servlet-name>
+		<servlet-class>com.liushimin.miniUI.servlet.FormServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FormService</servlet-name>
+		<url-pattern>/FormService</url-pattern>
+	</servlet-mapping>
+
+</web-app>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello MiniUI</title>
+    <script type="text/javascript" src="../../scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="../../scripts/miniui/miniui.js"></script>
+    <link type="text/css" rel="stylesheet" href="../../scripts/miniui/themes/default/miniui.css"/>
+</head>
+<body>
+    <input id="helloBtn" class="mini-button" text="Hello" onclick="onHelloClick"/>
+    <script type="text/javascript">
+        function onHelloClick(e) {
+            var button = e.sender;
+            mini.alert("Hello MiniUI!");
+        }
+    </script>
+</body>
+</html>
